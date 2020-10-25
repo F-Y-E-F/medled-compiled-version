@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".screens.doctor.ChatFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/circle_border"
+            android:contentDescription="message_icon"
+            android:padding="10dp"
+            android:src="@drawable/ic_message"
+            app:tint="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chatMemberName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Dr. Wilson"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/chatMemberBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Pulmanonologist"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/exitChatButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="exit_icon"
+            android:padding="2dp"
+            android:src="@drawable/ic_exit"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesRecyclerView"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/waitingForDoctorText"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Waiting for doctor..."
+        android:textAlignment="center"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="24sp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded10_bg"
+            android:backgroundTint="#f7f7f7"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/write_a_reply"
+            android:importantForAutofill="no"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <ImageView
+            android:id="@+id/sendMessageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_send"
+            android:padding="15dp"
+            app:tint="@color/white"
+            android:rotation="320"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "939821996753",
+    "firebase_url": "https://medled-bb76f.firebaseio.com",
+    "project_id": "medled-bb76f",
+    "storage_bucket": "medled-bb76f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939821996753:android:caa8ff2875793aa9a903f0",
+        "android_client_info": {
+          "package_name": "com.example.medled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939821996753-8vsdfdprdt7aumgqalj86h6h5ki6fces.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medled",
+            "certificate_hash": "b4645b44d3905e30683687c5542241869169b57e"
+          }
+        },
+        {
+          "client_id": "939821996753-4tjhaqarta92baegeqom9pi8geep3f38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-JYnPKBMBFqOaNz3ujhGzyJL8kMRwX4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939821996753-4tjhaqarta92baegeqom9pi8geep3f38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

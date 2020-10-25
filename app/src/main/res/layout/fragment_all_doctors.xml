@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/nameHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Hi Anna!"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/topDoctorsTV"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Top doctors"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_star"
+                app:tint="@color/yellow"
+                android:contentDescription="star" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_one_corner_rounded_bg"
+            android:backgroundTint="#ffffff"
+            android:layout_marginTop="20dp"
+            android:paddingTop="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Categories"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctorsTypeRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctorsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"/>
+
+
+            <TextView
+                android:id="@+id/doctorsAviableText"
+                android:layout_width="match_parent"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:text="No doctors Aviable already"
+                android:textSize="24sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textAlignment="center"
+                android:textColor="@color/darkGray"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

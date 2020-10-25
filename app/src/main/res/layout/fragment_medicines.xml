@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:text="@string/journal"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="32dp"
+                    android:contentDescription="notification_icon"
+                    android:src="@drawable/ic_notification"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1"
+                    app:tint="@color/black" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/firstDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/firstDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/secondDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/secondDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/thirdDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thirdDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fourthDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fourthDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fifthDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fifthDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="11"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sixthDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/sixthDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/seventhDayLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="M"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/seventhDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center"
+                        android:text="13"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/medicinesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="40dp" />
+
+            <TextView
+                android:id="@+id/addFirstMedicineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click '+' to add your first medicine today"
+                android:textSize="24sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:visibility="gone"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/darkGray"/>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addMedicineButton"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:src="@drawable/ic_add"
+        android:tint="#ffffff" />
+</FrameLayout>

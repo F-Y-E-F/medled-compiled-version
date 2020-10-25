@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.medicines.AddMedicineFragment">
+
+
+        <ImageView
+            android:id="@+id/addMedicineBackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Add Pills"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/addMedicineBackButton" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="32dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="32dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Pills Name"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+        <EditText
+            android:id="@+id/medicineNameInput"
+            android:layout_width="0dp"
+            android:nextFocusDown="@id/amountInputField"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_stroke_bg"
+            android:fontFamily="@font/open_sans_regular"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:maxLines="1"
+            android:paddingTop="17dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="17dp"
+            android:textColor="@color/darkGray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Amount"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/medicineNameInput" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Time"
+            android:textColor="@color/gray"
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/timeTextInput"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/amountInputField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_stroke_bg"
+            android:fontFamily="@font/open_sans_regular"
+            android:importantForAutofill="no"
+            android:maxLines="1"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:paddingTop="17dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="17dp"
+            android:textColor="@color/darkGray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/medicineTypeChooser"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/timeTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_stroke_bg"
+            android:fontFamily="@font/open_sans_regular"
+            android:importantForAutofill="no"
+            android:paddingStart="15dp"
+            android:paddingTop="17dp"
+            android:maxLines="1"
+            android:paddingEnd="15dp"
+            android:paddingBottom="17dp"
+            android:text="10:27"
+            android:textColor="@color/darkGray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/medicineTypeChooser"
+            app:layout_constraintEnd_toStartOf="@+id/chooseTimeButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/medicineTypeChooser"
+            app:layout_constraintTop_toTopOf="@+id/medicineTypeChooser"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="LabelFor" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/medicineTypeChooser"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_stroke_bg"
+            android:drawableEnd="@drawable/ic_more"
+            android:ems="10"
+            android:fontFamily="@font/open_sans_regular"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingTop="17dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="17dp"
+            android:singleLine="true"
+            android:text="pills"
+            android:textColor="@color/darkGray"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/amountInputField"
+            app:layout_constraintEnd_toStartOf="@+id/timeTextInput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.95"
+            app:layout_constraintStart_toEndOf="@+id/amountInputField"
+            app:layout_constraintTop_toTopOf="@+id/amountInputField"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <ImageView
+            android:id="@+id/chooseTimeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:src="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="@+id/timeTextInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/timeTextInput"
+            app:layout_constraintTop_toTopOf="@+id/timeTextInput"
+            app:layout_constraintVertical_bias="0.5"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Duration"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/amountInputField" />
+
+
+        <SeekBar
+            android:id="@+id/durationSeekbar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="9"
+            android:progress="2"
+            android:progressDrawable="@drawable/seekbar_path"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+        <TextView
+            android:id="@+id/durationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="3 weeks"
+            android:textColor="@color/darkGray"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/durationSeekbar" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Medicine form"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/durationText" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Start date"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/medicineFormRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/medicineFormRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/dateTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_stroke_bg"
+            android:fontFamily="@font/open_sans_regular"
+            android:importantForAutofill="no"
+            android:paddingStart="15dp"
+            android:paddingTop="17dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="17dp"
+            android:text="20 March 2020"
+            android:textColor="@color/darkGray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/chooseDateButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="LabelFor" />
+
+        <ImageView
+            android:id="@+id/chooseDateButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/dateTextInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="@+id/dateTextInput"
+            app:tint="@color/white" />
+
+        <Button
+            android:id="@+id/saveMedicineButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded10_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/open_sans_semibold"
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/dateTextInput" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
